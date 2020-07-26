@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+
+    <link rel="stylesheet" href="css/style_2.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script>$('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
+
+    $(document).ready(function () {
+        $('#read_more').click(function () {
+            $('#read').slideDown(0);
+            $(this).hide();
+            $('#hidden').show(0);
+        });
+        $('#hidden').click(function () {
+            $('#read').slideUp(0);
+            $(this).hide();
+            $('#read_more').show(0);
+        });
+    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#menu").on("click", "a", function (event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default " id="menu">
+        <div class="container">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Cozy_house" class="img-responsive"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#ex1">About the shelter</a></li>
+                        <li><a href="#ex2">Our pets</a></li>
+                        <li><a href="#ex3">To help the shelter</a></li>
+                        <li><a href="#ex4">Contacts</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+
+        <section class="not_only">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1>Not only people<br>
+                            need a house</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <a>Make a friend</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<section class="about" id="ex1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><img src="images/pets_about.png"  class="img-responsive"></div>
+            <div class="col-md-6"><h2>About the shelter <br>“Cozy House”</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin
+                    accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+
+                <p> Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo.
+                    Praesent mattis nibh quis
+                    ultrices pharetra. Morbi tempus at ante sit amet tristique.
+                    Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique
+                    ante vitae, dignissim
+                    lorem. Sed at ligula et sem mattis gravida ac vel erat.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="our_friends" id="ex2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center"><h2>Our friends who<br>
+                are looking for a house</h2></div>
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="col-md-12 ">
+                        <div class="item col-md-4 text-center col-xs-4">
+
+
+                            <div class="text"><img src="images/owl1.png" alt="photo">
+                                <h3>Katrine</h3><a  href="#win3" rel="nofollow">Learn More</a></div>
+
+
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl2.png">
+                                <h3>Jennifer</h3><a>Learn More</a></div>
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl3.png">
+                                <h3>Woody</h3><a>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl1.png" alt="photo">
+                                <h3>Katrine</h3><a>Learn More</a></div>
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl2.png">
+                                <h3>Jennifer</h3><a>Learn More</a></div>
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl3.png">
+                                <h3>Woody</h3><a>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl1.png" alt="photo">
+                                <h3>Katrine</h3><a>Learn More</a></div>
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl2.png">
+                                <h3>Jennifer</h3><a>Learn More</a></div>
+                        </div>
+                        <div class="item col-md-4 text-center col-xs-4">
+                            <div class="text"><img src="images/owl3.png">
+                                <h3>Woody</h3><a>Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="get"><a href="our_pets.html">Get to know the rest</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="help" id="ex3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center"><h2>Than you can help<br>
+                our shelter</h2></div>
+
+            <div class="col-md-2 col-md-offset-1 text-center"><img src="images/food.png">
+                <p>Pet food</p></div>
+            <div class="col-md-2  text-center"><img src="images/trans.png">
+                <p>Transportation</p></div>
+            <div class="col-md-2  text-center"><img src="images/toys.png">
+                <p>Toys</p></div>
+            <div class="col-md-2  text-center"><img src="images/bowls.png">
+                <p>Bowls and cups</p></div>
+            <div class="col-md-2  text-center"><img src="images/shampoos.png">
+                <p>Shampoos</p></div>
+            <div class="col-md-12">
+                <div class="col-md-2 col-md-offset-2 text-center"><img src="images/vitamins.png">
+                    <p>Vitamins</p></div>
+                <div class="col-md-2  text-center"><img src="images/medicines.png">
+                    <p>Mediciness</p></div>
+                <div class="col-md-2  text-center"><img src="images/collars.png">
+                    <p>Collars / leashes</p></div>
+                <div class="col-md-2  text-center"><img src="images/sleeping.png">
+                    <p>Sleeping area</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="addition" id="ex4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <img src="images/addition.png" class="img-responsive">
+            </div>
+            <div class="col-md-6"><h2>In addition, you<br>
+                can make a donation</h2>
+                <h3>Name of the bank / Type of bank account</h3></div>
+            <div class="col-md-4"><h4><i class="fas fa-money-check"></i> 8380 2880 8028 8791 7435</h4></div>
+            <div class="col-md-6"><p><em>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas a ipsum at libero sagittis dignissim sed
+                ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus.</em> </p></div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>For questions<br>
+                    and suggestions</h2>
+               <p> <i class="fas fa-envelope"></i>email@shelter.com</p>
+              <p>  <i class="fas fa-phone"></i>+13 674 567 75 54</p>
+            </div>
+            <div class="col-md-4">
+                <h2>We are waiting<br>
+                    for your visit</h2>
+                <h3> <i class="fas fa-map-marker-alt"></i>Boston, Central Street, 1st<br>
+                    (Entrance from the store)</h3>
+                <h3> <i class="fas fa-map-marker-alt"></i>London, South Park, 18st</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
